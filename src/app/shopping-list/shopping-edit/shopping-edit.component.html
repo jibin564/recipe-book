@@ -11,7 +11,7 @@
           >
         </div>
         <div class="col-sm-2 form-group">
-          <label for="amount">Amount</label>
+          <label for="amount">Amount(grams)</label>
           <input type="number" id="amount" class="form-control"
           name="amount"
           ngModel
@@ -22,8 +22,8 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <button class="btn btn-success" type="submit" [disabled]="!f.valid" >{{editMode ? 'update':'Add'}}</button>
-          <button class="btn btn-danger" type="button" (click)="onDelete()"
+          <button class="btn btn-success button-space" type="submit" [disabled]="!f.valid" >{{editMode ? 'update':'Add'}}</button>
+          <button class="btn btn-danger button-space" type="button" (click)="onDelete()"
           *ngIf="editMode">Delete</button>
           <button class="btn btn-primary" type="button" (click)="onClear()">Clear</button>
         </div>
